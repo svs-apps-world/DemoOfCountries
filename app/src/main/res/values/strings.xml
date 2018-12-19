@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Midtronics Demo</string>
+    <string name="snehal_sutar">Snehal Sutar</string>
+    <string name="masters_in_computer_science">
+        Degree: Masters in Computer Science \n\nUniversity: University of Texas at Dallas \n\nYear: Jan 2014 - Dec 2015
+        \n\n\n\nDegree: Bachelor\'s in Computer Engineering \n\nUniversity: Pune Institute Of Computer Technology \n\nYear: Jun 2007 - Dec 2010
+    </string>
+
+    <string name="work_experience_details">
+        Company: Sears Holdings Corporation \n\nRole: Android Developer \n\nYear: Mar 2016 - Nov 2018
+        \n\n\n\nCompany: Copart \n\nRole: Android Developer Intern \n\nYear: Jun 2015 - Aug 2015
+        \n\n\n\nCompany: IBM India Pvt. Ltd \n\nRole: Developer \n\nYear: Jul 2010 - Nov 2013
+
+    </string>
+    <string name="capital">Capital</string>
+    <string name="population">Population</string>
+    <string name="area">Area</string>
+    <string name="region">Region</string>
+    <string name="sub_region">SubRegion</string>
+    <string name="native_name">Native Name</string>
+    <string name="not_provided">Not Provided</string>
+    <string name="currency">Currency</string>
+    <string name="demonym">Demonym</string>
+</resources>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+    <ImageView
+            android:layout_width="0dp" android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/im_backdrop"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView"/>
+    <View
+            android:layout_width="0dp" android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:alpha=".5"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/view"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guidelineCenter"
+                                          android:orientation="vertical"
+                                          app:layout_constraintGuide_percent="0.5"/>
+
+    <TextView
+            android:text="@string/native_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nativeNameHeader" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="30dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineCenter" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="1.0"
+            android:textColor="@color/headerTextColor" android:textStyle="bold"
+            android:textSize="@dimen/headerTextSize"/>
+    <TextView
+            android:text="@string/not_provided"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nativeName" app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/nativeNameHeader"
+            app:layout_constraintBottom_toBottomOf="@+id/nativeNameHeader" tools:text="Delhi"
+            android:textColor="@color/contentTextColor"/>
+
+    <TextView
+            android:text="@string/capital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/capitalHeader" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="30dp"
+            app:layout_constraintTop_toTopOf="@id/nativeNameHeader"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineCenter" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="1.0"
+            android:textColor="@color/headerTextColor" android:textStyle="bold"
+            android:textSize="@dimen/headerTextSize"/>
+    <TextView
+            android:text="@string/not_provided"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/capital" app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/capitalHeader"
+            app:layout_constraintBottom_toBottomOf="@+id/capitalHeader" tools:text="Delhi"
+            android:textColor="@color/contentTextColor"/>
+    <TextView
+            android:text="@string/population"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/populationHeader" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/capitalHeader"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineCenter" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="1.0"
+            android:textColor="@color/headerTextColor" android:textStyle="bold"
+            android:textSize="@dimen/headerTextSize"/>
+    <TextView
+            android:text="@string/not_provided"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/population"
+            android:textColor="@color/contentTextColor"
+            app:layout_constraintTop_toTopOf="@+id/populationHeader"
+            app:layout_constraintBottom_toBottomOf="@+id/populationHeader"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" tools:text="3000"/>
+
+    <TextView
+            android:text="@string/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/areaHeader" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/populationHeader"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineCenter" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="1.0"
+            android:textColor="@color/headerTextColor" android:textStyle="bold"
+            android:textSize="@dimen/headerTextSize"/>
+    <TextView
+            android:text="@string/not_provided"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/area"
+            android:textColor="@color/contentTextColor"
+            app:layout_constraintTop_toTopOf="@+id/areaHeader"
+            app:layout_constraintBottom_toBottomOf="@+id/areaHeader"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" tools:text="3000"/>
+
+    <TextView
+            android:text="@string/region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/regionHeader" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/areaHeader"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineCenter" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="1.0"
+            android:textColor="@color/headerTextColor" android:textStyle="bold"
+            android:textSize="@dimen/headerTextSize"/>
+    <TextView
+            android:text="@string/not_provided"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/region"
+            android:textColor="@color/contentTextColor"
+            app:layout_constraintTop_toTopOf="@+id/regionHeader"
+            app:layout_constraintBottom_toBottomOf="@+id/regionHeader"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" tools:text="abc"/>
+
+    <TextView
+            android:text="@string/sub_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subRegionHeader" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/regionHeader"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineCenter" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="1.0"
+            android:textColor="@color/headerTextColor" android:textStyle="bold"
+            android:textSize="@dimen/headerTextSize"/>
+    <TextView
+            android:text="@string/not_provided"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subRegion"
+            android:textColor="@color/contentTextColor"
+            app:layout_constraintTop_toTopOf="@+id/subRegionHeader"
+            app:layout_constraintBottom_toBottomOf="@+id/subRegionHeader"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" tools:text="abc"/>
+
+    <TextView
+            android:text="@string/currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currencyHeader" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/subRegionHeader"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineCenter" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="1.0"
+            android:textColor="@color/headerTextColor" android:textStyle="bold"
+            android:textSize="@dimen/headerTextSize"/>
+    <TextView
+            android:text="@string/not_provided"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currency"
+            android:textColor="@color/contentTextColor"
+            app:layout_constraintTop_toTopOf="@+id/currencyHeader"
+            app:layout_constraintBottom_toBottomOf="@+id/currencyHeader"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" tools:text="INR"/>
+
+    <TextView
+            android:text="@string/demonym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/demonymHeader" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/currencyHeader"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineCenter" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="1.0"
+            android:textColor="@color/headerTextColor" android:textStyle="bold"
+            android:textSize="@dimen/headerTextSize"/>
+    <TextView
+            android:text="@string/not_provided"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/demonym"
+            android:textColor="@color/contentTextColor"
+            app:layout_constraintTop_toTopOf="@+id/demonymHeader"
+            app:layout_constraintBottom_toBottomOf="@+id/demonymHeader"
+            app:layout_constraintStart_toStartOf="@+id/guidelineCenter" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" tools:text="Indian"/>
+
+</android.support.constraint.ConstraintLayout>
