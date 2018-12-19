@@ -1,2 +1,2 @@
 # DemoOfCountries
-![](demo1.gif)
+![](demo2.gif)
